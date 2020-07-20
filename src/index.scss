@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Roboto';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba($color: #dfdfdf, $alpha: 1.0);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.input {
+  width: 100%;
+  height: 35px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+
+  &:focus {
+    box-shadow: 0 0 15px rgba(28, 50, 250, 0.7);
+  }
+}
+
+
+.blocks-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block {
+  flex: 1 0;
+  min-height: 50vh;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: #fff;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__title {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+.todo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1.5px solid rgba($color: #cecece, $alpha: 1.0);
+  border-radius: 16px;
+  cursor: pointer;
+  
+  &.__title {
+
+  }
+
+  &.__time {
+
+  }
+
+  input {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.trash {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 50px;
+  background-color: rgba(250, 28, 28, 0.671);
+  border-radius: 16px;
+  left: 40%;
+  bottom: 10%;
+  color: #fff;
+}
